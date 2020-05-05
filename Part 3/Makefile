@@ -1,0 +1,12 @@
+OBJS = part3.cpp
+
+CC = g++
+
+COMPILER_FLAGS = -w
+
+LINKER_FLAGS = -lSDL2
+
+OBJ_NAME = part3
+
+all : $(OBJS)
+	$(CC) $(OBJS) $(COMPILER_FLAGS) $(LINKER_FLAGS) -o $(OBJ_NAME)
